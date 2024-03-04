@@ -14,7 +14,7 @@ from zmq import Socket
 
 from .classes import CameraConfig
 from .templates import AbstractInterface
-from l2r.constants import (
+from src.l2r.l2r.constants import (
     BUFFER_SIZE,
     CV_8U,
     CV_8S,

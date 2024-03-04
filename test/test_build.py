@@ -1,7 +1,7 @@
 import unittest
 
-from l2r.build import build_camera_interfaces
-from l2r.build import load_camera_config_file
+from src.l2r.l2r.build import build_camera_interfaces
+from src.l2r.l2r.build import load_camera_config_file
 
 
 class TestBuildUtilites(unittest.TestCase):

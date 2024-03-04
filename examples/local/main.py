@@ -1,6 +1,6 @@
 import logging
-from l2r import build_env
-from l2r import RacingEnv
+from src.l2r.l2r import build_env
+from src.l2r.l2r import RacingEnv
 
 """
 This example assumes you have the simulator is running on your

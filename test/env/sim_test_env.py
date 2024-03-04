@@ -2,8 +2,8 @@ import logging
 import socket
 import unittest
 
-from l2r import build_env
-from l2r import RacingEnv
+from src.l2r.l2r import build_env
+from src.l2r.l2r import RacingEnv
 
 
 L2R_HOST = socket.gethostbyname("l2r")

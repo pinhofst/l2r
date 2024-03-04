@@ -5,8 +5,8 @@ from typing import Any, Dict, List, Tuple
 
 from websocket import create_connection
 
-from l2r.constants import MEDIUM_DELAY
-from l2r.track import level_2_simlevel
+from src.l2r.l2r.constants import MEDIUM_DELAY
+from src.l2r.l2r.track import level_2_simlevel
 
 
 class SimulatorConnectionError(Exception):

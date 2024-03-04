@@ -1,10 +1,10 @@
 import unittest
 from unittest import mock
 
-from l2r.core import ActionInterface
-from l2r.core import CameraConfig
-from l2r.core import CameraInterface
-from l2r.core.interfaces import InvalidActionError
+from src.l2r.l2r.core import ActionInterface
+from src.l2r.l2r.core import CameraConfig
+from src.l2r.l2r.core import CameraInterface
+from src.l2r.l2r.core.interfaces import InvalidActionError
 
 
 class ActionInterfaceTest(unittest.TestCase):

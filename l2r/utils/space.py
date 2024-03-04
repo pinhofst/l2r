@@ -4,7 +4,7 @@ from typing import Tuple
 
 import numpy as np
 
-from l2r.constants import EARTH_ECCEN2, DEG_2_RAD, EARTH_SEMI_MAJOR_RADIUS_M
+from src.l2r.l2r.constants import EARTH_ECCEN2, DEG_2_RAD, EARTH_SEMI_MAJOR_RADIUS_M
 
 
 def get_vehicle_corner_coordinates(

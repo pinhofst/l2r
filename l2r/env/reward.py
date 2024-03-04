@@ -2,8 +2,8 @@ from typing import Tuple
 
 import numpy as np
 
-from l2r.core import AbstractReward
-from l2r.constants import VELOCITY_IDX_LOW, VELOCITY_IDX_HIGH, NORTH_IDX, EAST_IDX
+from src.l2r.l2r.core import AbstractReward
+from src.l2r.l2r.constants import VELOCITY_IDX_LOW, VELOCITY_IDX_HIGH, NORTH_IDX, EAST_IDX
 
 
 class GranTurismo(AbstractReward):

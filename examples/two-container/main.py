@@ -1,7 +1,7 @@
 import logging
 import socket
-from l2r import build_env
-from l2r import RacingEnv
+from src.l2r.l2r import build_env
+from src.l2r.l2r import RacingEnv
 
 """
 This example runs in a Docker container and communicates with

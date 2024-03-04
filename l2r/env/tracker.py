@@ -5,7 +5,7 @@ from typing import List
 
 import numpy as np
 
-from l2r.utils.space import get_vehicle_corner_coordinates
+from src.l2r.l2r.utils.space import get_vehicle_corner_coordinates
 
 SEGMENTS_COMPLETE_NUM = 9
 A_BIG_NUMBER = 1000

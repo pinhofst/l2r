@@ -1,7 +1,7 @@
 import logging
 import subprocess
-from l2r import build_env
-from l2r import RacingEnv
+from src.l2r.l2r import build_env
+from src.l2r.l2r import RacingEnv
 
 """
 This script uses the subprocess module to run the simulator.

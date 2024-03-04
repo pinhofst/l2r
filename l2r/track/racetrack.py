@@ -8,8 +8,8 @@ import matplotlib.path as mplPath
 import numpy as np
 from scipy.spatial import KDTree
 
-from l2r.constants import N_SEGMENTS
-from l2r.utils.space import smooth_yaw
+from src.l2r.l2r.constants import N_SEGMENTS
+from src.l2r.l2r.utils.space import smooth_yaw
 from .utils import level_2_trackmap
 
 

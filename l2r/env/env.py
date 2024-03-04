@@ -23,10 +23,10 @@ from gym.spaces import Box
 
 # from scipy.spatial import KDTree
 
-from l2r.core import ActionInterface
-from l2r.core import CameraInterface
-from l2r.core import PoseInterface
-from l2r.constants import (
+from src.l2r.l2r.core import ActionInterface
+from src.l2r.l2r.core import CameraInterface
+from src.l2r.l2r.core import PoseInterface
+from src.l2r.l2r.constants import (
     CAR_DIMS,
     N_SEGMENTS,
     OBS_DELAY,
@@ -35,14 +35,14 @@ from l2r.constants import (
     LEVEL_Z_DICT,
     COORD_MULTIPLIER,
 )
-from l2r.utils.space import convert_ll_to_enu
-from l2r.track import load_track
+from src.l2r.l2r.utils.space import convert_ll_to_enu
+from src.l2r.l2r.track import load_track
 
 from .controller import SimulatorController
 from .reward import GranTurismo, CustomReward
 from .tracker import ProgressTracker
 
-# from l2r.track import level_2_trackmap
+# from src.l2r.l2r.track import level_2_trackmap
 
 # import ipdb as pdb
 

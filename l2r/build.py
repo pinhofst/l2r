@@ -7,12 +7,12 @@ from typing import Union
 
 import yaml
 
-from l2r.core import ActionInterface
-from l2r.core import CameraConfig
-from l2r.core import CameraInterface
-from l2r.core import PoseInterface
-from l2r.env import SimulatorController
-from l2r.env import RacingEnv
+from src.l2r.l2r.core import ActionInterface
+from src.l2r.l2r.core import CameraConfig
+from src.l2r.l2r.core import CameraInterface
+from src.l2r.l2r.core import PoseInterface
+from src.l2r.l2r.env import SimulatorController
+from src.l2r.l2r.env import RacingEnv
 
 
 def build_env(

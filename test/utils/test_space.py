@@ -2,8 +2,8 @@ import unittest
 
 import numpy as np
 
-from l2r.utils.space import convert_ll_to_enu
-from l2r.utils.space import get_vehicle_corner_coordinates
+from src.l2r.l2r.utils.space import convert_ll_to_enu
+from src.l2r.l2r.utils.space import get_vehicle_corner_coordinates
 
 
 class UtilsTest(unittest.TestCase):

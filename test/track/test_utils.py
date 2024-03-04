@@ -1,11 +1,11 @@
 import unittest
 
-from l2r.track import get_supported_levels
-from l2r.track import level_2_simlevel
-from l2r.track import level_2_trackmap
-from l2r.track import LevelNotFoundError
-from l2r.track import SimVersionNotSupported
-from l2r.track.data import SUPPORTED_RACETRACKS
+from src.l2r.l2r.track import get_supported_levels
+from src.l2r.l2r.track import level_2_simlevel
+from src.l2r.l2r.track import level_2_trackmap
+from src.l2r.l2r.track import LevelNotFoundError
+from src.l2r.l2r.track import SimVersionNotSupported
+from src.l2r.l2r.track.data import SUPPORTED_RACETRACKS
 
 
 class TrackUtilsTest(unittest.TestCase):
