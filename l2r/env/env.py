@@ -326,7 +326,6 @@ class RacingEnv(gym.Env):
           (30,) and (height, width, 3), respectively
         :rtype: tuple
         """
-        time.sleep(self.actual_delay)
         pose = self.pose_interface.get_data()
         self.imgs = {c.camera_name: c.get_data() for c in self.camera_interfaces}
 
