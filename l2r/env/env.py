@@ -158,21 +158,25 @@ class RacingEnv(gym.Env):
 
         return self
 
-    def step(self, action):
-        """The primary method of the environment. Executes the desired action,
-        receives the observation from the simulator, and evaluates termination
-        conditions.
+    def act(self, action):
+        """Executes the desired action
 
         :param dict action: the action and acceleration requests
+        """
+
+        # Send the action via the action interface
+        self.action_interface.act(action)
+    
+    def step(self):
+        """Receives the observation from the simulator, and evaluates termination
+        conditions.
+
         :return: observation, reward, done, info
         :rtype: if multimodal, the observation is a dict of numpy arrays with
           keys 'pose' and 'img' and shapes (30,) and (height, width, 3),
           respectively, otherwise the observation is just the image array.
           reward is of type float, done bool, and info dict
         """
-
-        # Send the action via the action interface
-        self.action_interface.act(action)
 
         # Receive data from the simulator
         observation = self._observe()
