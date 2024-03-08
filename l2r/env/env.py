@@ -79,6 +79,7 @@ class RacingEnv(gym.Env):
         self.max_timesteps = env_kwargs["max_timesteps"]
         self.not_moving_timeout = env_kwargs["not_moving_timeout"]
         self.observation_delay = env_kwargs["obs_delay"]
+        self.actual_delay = 0
         self.reward_pol = env_kwargs["reward_pol"]
 
         self.vehicle_params = env_kwargs["vehicle_params"]
@@ -306,6 +307,13 @@ class RacingEnv(gym.Env):
         """
         return self.imgs
 
+    def compute_delay(self, processing_time):
+
+        if processing_time > self.observation_delay:
+            self.actual_delay = 0
+        else:
+            self.actual_delay = self.observation_delay - processing_time
+    
     def _observe(self) -> Dict[str, Union[np.array, Dict[str, np.array]]]:
         """Perform an observation action by getting the most recent data from
         the pose and camera interfaces. To prevent observating immediately
@@ -318,7 +326,7 @@ class RacingEnv(gym.Env):
           (30,) and (height, width, 3), respectively
         :rtype: tuple
         """
-        time.sleep(self.observation_delay)
+        time.sleep(self.actual_delay)
         pose = self.pose_interface.get_data()
         self.imgs = {c.camera_name: c.get_data() for c in self.camera_interfaces}
 
